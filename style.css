@@ -3,9 +3,13 @@ button:active,
 button:focus  {
   border:none;
 }
+@font-face {
+    font-family: 'JakArta-';
+    src: url(./fonts/JakArta-.otf);
+}
 body{
     background-image: url(./img/image\ 1.jpg);
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'JakArta-', cursive;
     transition: all .8s;
     
 }
