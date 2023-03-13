@@ -1,6 +1,13 @@
+button,
+button:active,
+button:focus  {
+  border:none;
+}
 body{
     background-image: url(./img/image\ 1.jpg);
     font-family: 'Luckiest Guy', cursive;
+    transition: all .8s;
+    
 }
 *{
     margin: 0;
@@ -9,28 +16,32 @@ body{
 }
 .logo{
     display: flex;
+    padding-top: 40px;
     justify-content: center;
-    padding-top: 90px;
+    padding-left: 30px;
+    
+    
 }
 .menu{
     display: flex;
     background-color:#1E1E1E;
     width: 1920px;
-    height: 125px;
+    height: 80px;
 }
 .catalog{
     display: flex;
-    width: 100px;
+    width: 70px;
     padding-left: 35px;
+    
     
 }
 .header_text{
     display: flex;
-    font-size: 30px;
+    font-size: 20px;
     list-style-type: none;
     align-items: center;
     justify-content: space-around ;
-    width: 1920px;
+    width: 1650px;
     text-transform: uppercase
 }
 
@@ -42,7 +53,30 @@ a{
 
 }
 .button.header.cart{
+    display: flex;
+    
 
+}
+.header.button.catalog{
+    display: flex;
+    
+
+}
+button{
+    background-color: #1E1E1E
+}
+.favorite{
+    display: flex;
+    width: 40px;
+    padding-top: 17px;
+}
+.cart{
+    display: flex;
+    width: 40px;
+    padding-top: 17px;
+}
+.button.shop{
+    display: flex;
 }
 
 
