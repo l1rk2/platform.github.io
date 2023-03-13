@@ -6,11 +6,38 @@ button:focus  {
 @font-face {
     font-family: 'JakArta-';
     src: url(./fonts/JakArta-.otf);
+    
+}
+@font-face {
+    font-family: 'DOCALLISME';
+    src: url(./fonts/DOCALLISME.otf);
+}
+@font-face {
+    font-family: 'KEWAY';
+    src: url(./fonts/KEWAY.otf);
+}
+@font-face {
+    font-family: 'Night';
+    src: url(./fonts/Night.ttf);
 }
 body{
     background-image: url(./img/image\ 1.jpg);
-    font-family: 'JakArta-', cursive;
     transition: all .8s;
+    
+}
+.main.text{
+    
+
+}
+.logo{
+    font-family: 'JakArta-';
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    background:  url(./img/7.jpg)  ;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s infinite linear;
     
 }
 *{
@@ -18,19 +45,21 @@ body{
     box-sizing: border-box;
     text-decoration: none;
 }
-.logo{
+/* .logo{
     display: flex;
-    padding-top: 40px;
+    margin: 20px;
     justify-content: center;
     padding-left: 30px;
     
     
-}
+} */
+
 .menu{
     display: flex;
     background-color:#1E1E1E;
     width: 1920px;
     height: 80px;
+    font-family: 'JakArta-', cursive;
 }
 .catalog{
     display: flex;
@@ -53,17 +82,15 @@ a{
     color: white;
 }
 .button.header.favorite{
-    
+    display: flex;
 
 }
 .button.header.cart{
     display: flex;
-    
-
+    width: 40px;
 }
 .header.button.catalog{
     display: flex;
-    
 
 }
 button{
@@ -72,7 +99,8 @@ button{
 .favorite{
     display: flex;
     width: 40px;
-    padding-top: 17px;
+    padding-top: 15px;
+
 }
 .cart{
     display: flex;
@@ -81,6 +109,16 @@ button{
 }
 .button.shop{
     display: flex;
+    width: 40px;
 }
+@keyframes animate{
+    from{
+        background-position:0 0 ;
+    }
+    to{
+        background-position:100% 100%;
+    }
+}
+
 
 
