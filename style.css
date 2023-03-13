@@ -1,0 +1,48 @@
+body{
+    background-image: url(./img/image\ 1.jpg);
+    font-family: 'Luckiest Guy', cursive;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+}
+.menu{
+    display: flex;
+    background-color:#1E1E1E;
+    width: 1920px;
+    height: 125px;
+}
+.catalog{
+    display: flex;
+    width: 100px;
+    padding-left: 35px;
+    
+}
+.header_text{
+    display: flex;
+    font-size: 30px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around ;
+    width: 1920px;
+    text-transform: uppercase
+}
+
+a{
+    color: white;
+}
+.button.header.favorite{
+    
+
+}
+.button.header.cart{
+
+}
+
+
