@@ -25,20 +25,27 @@ body{
     transition: all .8s;
     
 }
+@font-face {
+    font-family:'Sunny' ;
+    src: url(./fonts/Sunny.otf);
+}
+@font-face {
+    font-family:'Adripping' ;
+    src: url(./fonts/Adripping.ttf);
+}
 .main.text{
     
 
 }
 .logo{
-    font-family: 'JakArta-';
-    font-size: 80px;
+    font-family: 'DOCALLISME';
+    font-size: 95px;
     display: flex;
     justify-content: center;
-    background:  url(./img/7.jpg)  ;
+    background: url(./img/9.jpg) ;
     color: transparent;
     -webkit-background-clip: text;
     animation: animate 10s infinite linear;
-    
 }
 *{
     margin: 0;
@@ -56,10 +63,10 @@ body{
 
 .menu{
     display: flex;
-    background-color:#1E1E1E;
+    background-color: #1E1E1E;
     width: 1920px;
     height: 80px;
-    font-family: 'JakArta-', cursive;
+    font-family: 'Adripping', cursive;
 }
 .catalog{
     display: flex;
@@ -69,8 +76,9 @@ body{
     
 }
 .header_text{
+    padding-top: 5px;
     display: flex;
-    font-size: 30px;
+    font-size: 50px;
     list-style-type: none;
     align-items: center;
     justify-content: space-around ;
@@ -79,7 +87,7 @@ body{
 }
 
 a{
-    color: white;
+    color: white ;
 }
 .button.header.favorite{
     display: flex;
@@ -118,7 +126,9 @@ button{
     to{
         background-position:100% 100%;
     }
+    
 }
+
 
 
 
