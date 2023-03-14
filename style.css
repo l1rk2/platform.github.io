@@ -75,7 +75,7 @@ body{
     
     
 }
-.header_text{
+.container{
     padding-top: 5px;
     display: flex;
     font-size: 50px;
@@ -88,6 +88,22 @@ body{
 
 a{
     color: white ;
+    text-decoration: none;
+    position: relative;
+}
+a::after{
+    position: absolute;
+    border-bottom: 4px solid white;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform.6s;
+}
+a:hover::after{
+    transform: scaleX(1);
 }
 .button.header.favorite{
     display: flex;
