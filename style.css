@@ -96,7 +96,7 @@ a{
 }
 a::after{
     position: absolute;
-    border-bottom: 2gpx solid white;
+    border-bottom: 2px solid white;
     border-radius: 10px;
     content: "";
     left: 0;
