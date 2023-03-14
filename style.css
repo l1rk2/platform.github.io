@@ -21,7 +21,7 @@ button:focus  {
     src: url(./fonts/Night.ttf);
 }
 body{
-    background-image: url(./img/image\ 1.jpg);
+    background-image: url(./img/image2.jpg);
     transition: all .8s;
     list-style-type: none;
     align-items: center;
@@ -90,9 +90,6 @@ a{
     color: white ;
     text-decoration: none;
     position: relative;
-    
-   
-   
 }
 a::after{
     position: absolute;
@@ -119,10 +116,13 @@ a:hover::after{
 }
 .header.button.catalog{
     display: flex;
+    box-sizing: border-box;
+    padding: 0px;
 
 }
 button{
-    background-color: #1E1E1E
+    background-color: #1E1E1E;
+    box-sizing: border-box;
 }
 .favorite{
     display: flex;
@@ -149,6 +149,91 @@ button{
     
 }
 
+button::after{
+    position: absolute;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform.6s;
+
+}
+button:hover::after{
+    transform: scaleX(1);
+}
+button{
+    position: relative;
+}
+.slider{
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+
+.middle{
+    position: absolute;
+    top:60%;
+    left: 25.5%;
+    transform: translate(-50%, -50%);
+
+}
+.navigation{
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #ddd;
+    opacity: .5;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+.bar:hover{
+    opacity: 0.8;
+    transform:scale(1.1) ;
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#r1:checked ~.s1{
+    margin-left:0;
+}
+#r2:checked ~.s1{
+    margin-left:-25%;
+}
+#r3:checked ~.s1{
+    margin-left:-50%;
+}
+#r4:checked ~.s1{
+    margin-left:-75%;
+}
 
 
 
