@@ -35,10 +35,6 @@ body{
     font-family:'Adripping' ;
     src: url(./fonts/Adripping.ttf);
 }
-.main.text{
-    
-
-}
 .logo{
     font-family: 'DOCALLISME';
     font-size: 95px;
@@ -100,7 +96,8 @@ a{
 }
 a::after{
     position: absolute;
-    border-bottom: 4px solid white;
+    border-bottom: 2gpx solid white;
+    border-radius: 10px;
     content: "";
     left: 0;
     bottom: 0;
