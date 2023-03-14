@@ -23,6 +23,8 @@ button:focus  {
 body{
     background-image: url(./img/image\ 1.jpg);
     transition: all .8s;
+    list-style-type: none;
+    align-items: center;
     
 }
 @font-face {
@@ -83,13 +85,18 @@ body{
     align-items: center;
     justify-content: space-around ;
     width: 1650px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    
+
 }
 
 a{
     color: white ;
     text-decoration: none;
     position: relative;
+    
+   
+   
 }
 a::after{
     position: absolute;
