@@ -21,7 +21,7 @@ button:focus  {
     src: url(./fonts/Night.ttf);
 }
 body{
-    background-image: url(./img/image2.jpg);
+    background-image: url(./img/image\ 1.jpg);
     transition: all .8s;
     list-style-type: none;
     align-items: center;
@@ -108,37 +108,52 @@ a:hover::after{
 }
 .button.header.favorite{
     display: flex;
+    width: 47px;
+    height: 47px;
+    padding-top: 15px;
+    
 
 }
 .button.header.cart{
     display: flex;
-    width: 40px;
+    width: 47px;
+    height: 47px;
+    position: relative;
+    padding-top: 15px;
 }
 .header.button.catalog{
     display: flex;
     box-sizing: border-box;
-    padding: 0px;
-
+   
+    position: relative;
+    width: 47px;
+    height: 47px;
+    padding-top: 15px;
 }
 button{
     background-color: #1E1E1E;
     box-sizing: border-box;
-}
-.favorite{
-    display: flex;
-    width: 40px;
-    padding-top: 15px;
 
 }
+.favorite{
+    position: relative;
+    width: 47px;
+    height: 47px;
+    align-items: center;
+    
+    
+}
 .cart{
+    position: relative;
+    width: 47px;
+    height: 47px;
+    align-items: center;
     display: flex;
-    width: 40px;
-    padding-top: 17px;
 }
-.button.shop{
-    display: flex;
-    width: 40px;
-}
+
+    
+    
+
 @keyframes animate{
     from{
         background-position:0 0 ;
@@ -172,8 +187,8 @@ button{
     width: 900px;
     height: 500px;
     overflow: hidden;
-    border-radius: 15px;
-
+    background-size: contain;
+    border-radius: 10px;
 }
 
 .middle{
@@ -234,11 +249,28 @@ input[name="r"]{
 #r4:checked ~.s1{
     margin-left:-75%;
 }
-@media screen and(max-width:1920px) and (max-height:928px) {
-    .middle{
-        position: absolute;
-        top:57%;
-        left: 25.5%;
-        transform: translate(-50%, -50%);
-    }
+
+button{
+    width: 47px;
+    height: 47px;
+    display: flex;
+}
+@media (width:) {
+    
+    
+}
+.border-image{
+    width: 930px;
+    height: 530px;
+    position: absolute;
+    display: flex;
+    z-index: -1;
+    
+    top:31.50%;
+    left: 1.30%;
+    
+    
+    
+    
+
 }
